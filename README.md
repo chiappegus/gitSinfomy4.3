@@ -30,3 +30,9 @@ php bin/console debug:router
 curl -X GET 'https://localhost:8000/api' -H "accept: application/ld+json"
 
 
+si hay bd :
+
+composer require doctrine/doctrine-fixtures-bundle --dev
+php bin/console doctrine:fixtures:load
+
+
